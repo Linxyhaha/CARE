@@ -69,7 +69,7 @@ All datasets are stored under `data/`. We experiment on three Amazon datasets an
 | Video Games | Game products | `data/{train,valid,test}/Video_Games_5_2012-10-2018-11.csv` |
 | Sports and Outdoors | Sports products | `data/{train,valid,test}/Sports_and_Outdoors_5_2016-10-2018-11.csv` |
 | Toys and Games | Toy products | `data/{train,valid,test}/Toys_and_Games_5_2016-10-2018-11.csv` |
-| MicroLens | Short videos | `data/microlens/{train,valid,test}/MicroLens.csv` |
+| MicroLens | Short videos | `data/{train,valid,test}/MicroLens.csv` |
 
 Each dataset's `data/info/` folder contains:
 - `<dataset>.TIGER-index.json` — TIGER item identifier index
@@ -126,7 +126,7 @@ accelerate launch --config_file zero2.yaml \
 
 | Argument | Description |
 |---|---|
-| `--dataset` | Dataset name (e.g., `Video_Games`, `Musical_Instruments`) |
+| `--dataset` | Dataset name (e.g., `Video_Games`) |
 | `--base_model` | Path to pretrained Qwen2.5 model |
 | `--query_list` | Number of query tokens per reasoning stage (e.g., `1 1 1 1` for 4-token identifiers) |
 | `--progressive_list` | Whether to use progressive attention per stage (`1`) or standard causal attention (`0`) |
