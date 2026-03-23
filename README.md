@@ -28,12 +28,6 @@ This is the PyTorch implementation of the paper:
 - PyTorch 2.6.0
 - Transformers 4.49.0
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ## Repository Structure
